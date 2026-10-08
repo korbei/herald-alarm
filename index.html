@@ -177,5 +177,31 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add("js");
+  // Mark what fades in: standalone blocks as one, grid children staggered.
+  var singles = document.querySelectorAll(".hero .wrap > div, #sample .wrap > div, .sample, #features .wrap > .eyebrow, #features .wrap > h2, #screens .wrap > div:not(.screens), .pro-head > *, .compare, .fine, .privacy .wrap > *, #faq .wrap > div:not(.faq)");
+  singles.forEach(function (el) { el.classList.add("reveal"); });
+  document.querySelectorAll(".grid, .screens, .plans, .faq").forEach(function (group) {
+    Array.prototype.forEach.call(group.children, function (el, i) {
+      el.classList.add("reveal"); if (group.classList.contains("screens")) el.classList.add("reveal-scale");
+      el.style.setProperty("--d", (i * 90) + "ms");
+    });
+  });
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var targets = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)) { targets.forEach(function (el) { el.classList.add("in"); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -10% 0px", threshold: 0.12 });
+  targets.forEach(function (el) { io.observe(el); });
+  var nav = document.querySelector(".nav");
+  var onScroll = function () { nav.classList.toggle("scrolled", window.scrollY > 8); };
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+})();
+</script>
+
 </body>
 </html>
