@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herald — Privacy Policy</title>
+<meta name="description" content="How the Herald alarm clock for Android handles your data: everything stays on your phone except the optional weather, news and AI-voice requests you turn on.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><svg class="mark" viewBox="0 0 108 108" width="40" height="40" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1F1C3D"/><path d="M54,36 L54,29 M41.1,40.7 L36.6,35.3 M66.9,40.7 L71.4,35.3 M35.2,49.2 L28.6,46.8 M72.8,49.2 L79.4,46.8" stroke="#FFC35C" stroke-width="3.5" stroke-linecap="round" fill="none"/><circle cx="54" cy="56" r="16" fill="#FF9C5B"/><path d="M30,74 L78,74" stroke="#FF7A59" stroke-width="4" stroke-linecap="round"/></svg><a href="./">Herald</a></header>
+<h1>Herald — Privacy Policy</h1>
+<p class="muted">Last updated: 2026-10-07</p>
+<p>Herald is an alarm clock that can speak the time, your day's calendar, today's weather and the news when it wakes you. Herald is built to keep your data on your device. There are no user accounts, no advertising, and no analytics or tracking.</p>
+<h2>What stays on your device</h2>
+<p>These never leave your phone and are never sent to us or anyone else:</p>
+<ul>
+<li><strong>Your alarms and settings</strong> — stored locally.</li>
+<li><strong>Calendar events</strong> — if you turn on the agenda, Herald reads your calendar on the device to show and speak your day. The events are not uploaded or shared.</li>
+<li><strong>Recordings and audio files</strong> — a message you record, or an audio file you pick, is copied into the app's private storage and only played by your alarm.</li>
+</ul>
+<h2>The one thing that leaves your device: weather</h2>
+<p>If you turn on <strong>spoken weather</strong>, Herald needs a location to fetch the forecast:</p>
+<ul>
+<li>By default it uses your device's <strong>approximate (coarse) location</strong>.</li>
+<li>Or you can set a <strong>place by name</strong> in Settings, which avoids the location permission.</li>
+</ul>
+<p>Herald sends that location (approximate coordinates, or your chosen place) to the <strong>Open-Meteo</strong> weather service to get the forecast, then caches the forecast on your device. We do not store your location on any server, and it is used only to return weather. Open-Meteo is a third party with its own privacy policy: <a href="https://open-meteo.com/en/terms">https://open-meteo.com/en/terms</a> . Weather is optional; if you never enable it, Herald makes no network requests for it.</p>
+<h2>The other thing that leaves your device: news</h2>
+<p>If you turn on <strong>news</strong>, Herald fetches the latest headlines for the source and topic you chose — <strong>Google News</strong>, <strong>BBC</strong>, <strong>The Guardian</strong> or <strong>NPR</strong>, in Top stories, World, Technology or Business — from that outlet's public RSS feed, then caches them on your device to read and show when the alarm rings. No location, account or personal data is sent — just a request for the public feed (for Google News, in your region's edition, derived from your device language and country). These outlets are third parties with their own privacy policies. News is optional; if you never enable it, Herald makes no network requests for it.</p>
+<h2>AI voices: your own provider, your own key</h2>
+<p>Herald Pro can speak with voices from <strong>ElevenLabs</strong>, <strong>OpenAI</strong> or <strong>Google Cloud Text-to-Speech</strong>. These are optional and work only with an API key from <em>your own</em> account at that provider:</p>
+<ul>
+<li>Your key is stored on your phone in Android's encrypted key storage. It is never sent to us and never leaves the phone except to the provider it belongs to.</li>
+<li>When an alarm with an AI voice is prepared, Herald sends the <strong>text to be spoken</strong> to that provider: your alarm message and, if you turned them on, the spoken agenda (event titles and times from your calendar), the weather sentence and the news headlines. The provider returns audio, which Herald caches on your phone. Nothing else — no location, contacts or identifiers — is included.</li>
+<li>The provider processes that text under its own terms and privacy policy (ElevenLabs: <a href="https://elevenlabs.io/privacy">https://elevenlabs.io/privacy</a>, OpenAI: <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a>, Google Cloud: <a href="https://cloud.google.com/terms/cloud-privacy-notice">https://cloud.google.com/terms/cloud-privacy-notice</a>). Usage is billed by the provider to you.</li>
+<li>With the phone's built-in voices (the default, and the only option without Pro), no text leaves the device.</li>
+</ul>
+<h2>Purchases</h2>
+<p>Herald Pro is sold through <strong>Google Play</strong> as a subscription or a one-time purchase. Google handles the payment; Herald never sees your card or billing details. The app receives only a purchase receipt from Play, which it checks and keeps on the phone to know that Pro is active. There is no Herald account.</p>
+<h2>Permissions and why</h2>
+<ul>
+<li><strong>Alarms &amp; reminders / exact alarms</strong> — to ring at the exact time you set.</li>
+<li><strong>Notifications &amp; full-screen</strong> — to show the ringing screen and alarm notifications.</li>
+<li><strong>Calendar (read)</strong> — only if you use the agenda; read on device, never uploaded.</li>
+<li><strong>Microphone</strong> — only if you record an alarm message; stored locally.</li>
+<li><strong>Approximate location</strong> — only if you use spoken weather with your device location.</li>
+<li><strong>Internet</strong> — only to fetch the weather forecast and news headlines, to reach the AI voice provider you configured, and to talk to Google Play for purchases.</li>
+<li><strong>Run at startup, wake lock, vibrate</strong> — so alarms survive a reboot and ring reliably.</li>
+</ul>
+<h2>Children</h2>
+<p>Herald is a general-purpose utility and is not directed at children.</p>
+<h2>Backups</h2>
+<p>Android's system backup may include your alarms and settings in your own Google account backup, under your control. The regenerable text-to-speech cache is excluded.</p>
+<h2>Changes</h2>
+<p>We will update this page and its date if the app's data practices change.</p>
+<h2>Contact</h2>
+<p>tamas.korbei@egroup.hu</p>
+</main>
+</body>
+</html>
