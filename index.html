@@ -3,24 +3,179 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Herald — Talking Alarm Clock</title>
-<meta name="description" content="Herald is an Android alarm clock that wakes you with a voice and tells you about your day: calendar, weather and news, read aloud.">
+<title>Herald — The alarm clock that tells you about your day</title>
+<meta name="description" content="Herald is an Android alarm clock that wakes you with a voice and reads your day: today's calendar, the weather and the headlines. AI voices with your own key. No ads, no account, no tracking.">
+<meta property="og:title" content="Herald — Talking Alarm Clock for Android">
+<meta property="og:description" content="Wake up to a voice that tells you your day: calendar, weather and news, read aloud on the lock screen.">
+<meta property="og:image" content="https://korbei.github.io/herald-site/img/icon-512.png">
+<link rel="icon" href="img/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<header><svg class="mark" viewBox="0 0 108 108" width="40" height="40" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1F1C3D"/><path d="M54,36 L54,29 M41.1,40.7 L36.6,35.3 M66.9,40.7 L71.4,35.3 M35.2,49.2 L28.6,46.8 M72.8,49.2 L79.4,46.8" stroke="#FFC35C" stroke-width="3.5" stroke-linecap="round" fill="none"/><circle cx="54" cy="56" r="16" fill="#FF9C5B"/><path d="M30,74 L78,74" stroke="#FF7A59" stroke-width="4" stroke-linecap="round"/></svg><a href="./">Herald</a></header>
-<h1>The alarm clock that tells you about your day.</h1>
-<p class="muted">Herald wakes you with a spoken message in a voice you choose — and, if you want, reads today's calendar, the weather and the headlines. No ads, no account, no tracking.</p>
-<a class="cta" href="https://play.google.com/store/apps/details?id=hu.korbei.herald">Get it on Google Play</a>
-<div class="card">
-<h2 style="margin-top:0">Links</h2>
-<ul>
-<li><a href="privacy.html">Privacy policy</a></li>
-<li>Support: <a href="mailto:tamas.korbei@egroup.hu">tamas.korbei@egroup.hu</a></li>
-</ul>
+
+<div class="nav">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon-512.png" alt="" width="32" height="32">Herald</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#pro">Pro</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=hu.korbei.herald">Get it on Google Play</a>
+  </div>
 </div>
-<footer>© 2026 Tamás Korbei · Herald for Android</footer>
-</main>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Talking alarm clock for Android</span>
+      <h1>Wake up to a voice that tells you your day.</h1>
+      <p class="lead" style="margin-top:18px">Herald replaces the ringtone with a spoken message in a voice you choose — then reads today's calendar, the weather and the headlines, right on the lock screen, before you've opened an eye.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=hu.korbei.herald">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3 13.4 12l-9.8 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1Zm1.7-.3 11.5 6.6-2.7 2.7L4.4 1.9c.3-.1.6-.1.9.1Zm0 20 8.8-9.3 2.7 2.7L5.3 22c-.3.2-.6.2-.9 0Zm12.6-7.7-3-3 3-3 3.5 2c.9.5.9 1.5 0 2l-3.5 2Z"/></svg>
+          Get it on Google Play
+        </a>
+        <a class="btn btn-ghost" href="#sample">Hear what it says</a>
+      </div>
+      <p class="hero-note">Free alarms forever · Pro briefing with a 7-day free trial · No ads, no account</p>
+    </div>
+    <div class="phone"><img src="img/ringing.png" width="540" height="1200" alt="Herald's ringing screen: the time, the spoken message, today's agenda, the weather and the top stories"></div>
+  </div>
+</section>
+
+<section id="sample">
+  <div class="wrap">
+    <div style="text-align:center">
+      <span class="eyebrow">A Herald morning</span>
+      <h2>Not a beep. A briefing.</h2>
+      <p class="lead" style="margin:16px auto 0">Every part is optional and in your words. Here is what a weekday alarm can sound like.</p>
+    </div>
+    <div class="sample">
+      <ol>
+        <li><span class="dot" style="background:#FFC35C">🗣️</span><div><div class="who">Your message</div><q>Good morning! It is 6:30 on Wednesday. Time to get moving.</q></div></li>
+        <li><span class="dot" style="background:#C9B8FF">📅</span><div><div class="who">Today's agenda</div><q>You have four events today. Team stand-up at nine, design review at eleven, and lunch with Anna at half past twelve.</q></div></li>
+        <li><span class="dot" style="background:#8FE3C4">☀️</span><div><div class="who">Weather</div><q>Clear right now, 17 degrees. Sunny later with a high of 24.</q></div></li>
+        <li><span class="dot" style="background:#FF7A59">📰</span><div><div class="who">Top stories</div><q>In the news this morning: the city council has approved the new riverside park…</q></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <span class="eyebrow">What it does</span>
+    <h2>Everything a morning needs, out loud.</h2>
+    <div class="grid">
+      <div class="feature"><div class="ico" style="background:#FFC35C">💬</div><h3>Say it your way</h3><p>Write the message the alarm speaks, with {time}, {day} and {date} filled in live — or record one in your own voice, or play any audio file.</p><span class="tag free">Free</span></div>
+      <div class="feature"><div class="ico" style="background:#C9B8FF">🎙️</div><h3>Voices worth waking to</h3><p>Every text-to-speech voice on your phone, with speed and pitch. Or bring your own ElevenLabs, OpenAI or Google Cloud key for lifelike AI voices, with stage directions like [whispers] and [shouting].</p><span class="tag">AI voices · Pro</span></div>
+      <div class="feature"><div class="ico" style="background:#8FE3C4">📅</div><h3>Today's agenda</h3><p>Your calendar for the day, shown on the lock screen and read after the message: how many events and the first few, with their times.</p><span class="tag">Pro</span></div>
+      <div class="feature"><div class="ico" style="background:#FF9C5B">☀️</div><h3>Spoken weather</h3><p>Current conditions and today's high, in °C or °F, from your location or a place you set by name — so you know what to wear before you get up.</p><span class="tag">Pro</span></div>
+      <div class="feature"><div class="ico" style="background:#FF7A59">📰</div><h3>The headlines</h3><p>Top stories from Google News, BBC, The Guardian or NPR — your pick of topic — shown on the ringing screen and, if you like, read aloud.</p><span class="tag">Pro</span></div>
+      <div class="feature"><div class="ico" style="background:#B9AEE0">🌅</div><h3>Calm by design</h3><p>A sunrise "Daybreak" look that shifts with the time of day across the alarm list, the ringing screen and the home-screen widget. Gradual volume, snooze, vibration — and alarms that survive reboots and time-zone changes.</p><span class="tag free">Free</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="wrap">
+    <div style="text-align:center">
+      <span class="eyebrow">Screens</span>
+      <h2>Designed to be the first thing you see.</h2>
+    </div>
+    <div class="screens">
+      <figure><div class="phone"><img src="img/list.png" width="540" height="1200" alt="Alarm list with the next alarm in a sunrise card" loading="lazy"></div><figcaption>Your alarms, in a sunrise that follows the day</figcaption></figure>
+      <figure><div class="phone"><img src="img/message.png" width="540" height="1200" alt="Alarm editor with the spoken message and placeholder chips" loading="lazy"></div><figcaption>Write what it says — add {time} or [whispers]</figcaption></figure>
+      <figure><div class="phone"><img src="img/voices.png" width="540" height="1200" alt="AI voice picker listing ElevenLabs voices" loading="lazy"></div><figcaption>Bring your own ElevenLabs, OpenAI or Google voice</figcaption></figure>
+      <figure><div class="phone"><img src="img/briefing.png" width="540" height="1200" alt="Agenda, weather and news switches in the alarm editor" loading="lazy"></div><figcaption>Hear your day: calendar, weather, headlines</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="pro">
+  <div class="wrap">
+    <div class="pro-head">
+      <div>
+        <span class="eyebrow">Herald Pro</span>
+        <h2>Alarms are free. The briefing is Pro.</h2>
+      </div>
+      <p class="lead">Herald is a complete alarm clock without paying a forint. Pro adds the parts that need the outside world — AI voices, calendar, weather, news — plus your own music and premium widgets. Try it free for seven days.</p>
+    </div>
+
+    <div class="compare">
+      <table>
+        <thead><tr><th>Feature</th><th>Free</th><th>Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Unlimited alarms, repeat, labels, snooze, gradual volume</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Spoken message with placeholders, or a recorded message</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>All the text-to-speech voices on your phone</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Home-screen widget with the next alarm</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>AI voices — ElevenLabs, OpenAI, Google (your own key)</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>Today's agenda, read aloud and on the lock screen</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>Spoken weather</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>Top headlines, shown and read</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>Your own music or audio file as the alarm</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>Premium widget styles</td><td class="no">—</td><td class="yes">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="plans">
+      <div class="plan"><div class="name">Monthly</div><div class="price">$1.99 <small>/ month</small></div><p>7-day free trial, then renews monthly. Cancel any time in Google Play.</p></div>
+      <div class="plan hot"><span class="badge">Best value</span><div class="name">Yearly</div><div class="price">$11.99 <small>/ year</small></div><p>7-day free trial, then renews yearly — about half the monthly price.</p></div>
+      <div class="plan"><div class="name">Lifetime</div><div class="price">$24.99 <small>once</small></div><p>Pro for good. One payment, no renewal, restores on a new phone.</p></div>
+    </div>
+    <p class="fine">Prices in US dollars for reference; Google Play shows the exact price in your currency before you confirm. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period. AI voices use your own provider account, billed by the provider.</p>
+  </div>
+</section>
+
+<section class="privacy">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Privacy</span>
+      <h2>Your morning stays on your phone.</h2>
+      <p class="lead" style="margin-top:16px">No ads, no account, no analytics. Herald only talks to the outside world for the features you switch on.</p>
+      <a class="btn btn-ghost" href="privacy.html" style="margin-top:24px">Read the privacy policy</a>
+    </div>
+    <ul class="checks">
+      <li>Alarms, settings, recordings and your calendar never leave the device.</li>
+      <li>Weather sends an approximate location — or a place name you typed — to Open-Meteo, and nothing else.</li>
+      <li>News fetches a public feed; no identifiers are sent.</li>
+      <li>AI voices send the text to be spoken to the provider you chose, with your own key, which is stored encrypted on the phone.</li>
+      <li>Purchases go through Google Play; Herald never sees your payment details.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div style="text-align:center">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions, answered.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do I need an AI account to use Herald?</summary><p>No. Herald uses the voices already on your phone, for free, with no sign-up. AI voices are an option for Pro users who have their own ElevenLabs, OpenAI or Google Cloud account — you paste your key, Herald sends only the text to speak, and the provider bills you directly for what you use.</p></details>
+      <details><summary>Does it work offline?</summary><p>Alarms, spoken messages with device voices, recordings and your own music all work with no connection. Weather, news and AI voices are fetched ahead of time and cached, so a flaky morning connection usually doesn't matter; if something couldn't be fetched, the alarm still rings and the device voice reads your message.</p></details>
+      <details><summary>What happens if my Pro ends?</summary><p>Your alarms keep ringing exactly as before. The Pro extras — AI voices, agenda, weather, news, audio-file alarms — pause until Pro is active again, and the alarm list shows which alarms are affected. Nothing is deleted.</p></details>
+      <details><summary>How does the free trial work?</summary><p>Start the trial from the paywall; Google Play handles it. You get seven days of Pro, then the plan you picked renews unless you cancel in Google Play's Subscriptions page at least 24 hours before the trial ends. One trial per Google account.</p></details>
+      <details><summary>Which permissions does Herald ask for, and why?</summary><p>Exact alarms and notifications to ring; calendar only for the agenda; microphone only to record a message; approximate location only for weather with your location. Everything else is optional and explained in the privacy policy.</p></details>
+      <details><summary>Which phones are supported?</summary><p>Android 12 and newer. Herald is built with Android's exact-alarm and full-screen-intent APIs so it rings on the lock screen like a system alarm.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Tamás Korbei · Herald for Android</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="mailto:tamas.korbei@egroup.hu">tamas.korbei@egroup.hu</a>
+    <a class="sp" href="https://play.google.com/store/apps/details?id=hu.korbei.herald">Google Play</a>
+  </div>
+</footer>
+
 </body>
 </html>
