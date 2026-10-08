@@ -13,7 +13,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;background:
   radial-gradient(900px 600px at 80% -10%,rgba(255,122,89,.22),transparent 60%),
   radial-gradient(700px 500px at 0% 20%,rgba(61,42,112,.9),transparent 65%),
   linear-gradient(180deg,#2B1F56 0,#1A1738 35%,#14122B 100%)}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--coral)}
 h1,h2,h3{line-height:1.12;letter-spacing:-.02em;margin:0;text-wrap:balance}
 h1{font-size:clamp(38px,6vw,64px);font-weight:800}
